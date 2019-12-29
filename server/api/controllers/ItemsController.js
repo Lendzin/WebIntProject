@@ -4,20 +4,22 @@
  * @description :: Server-side actions for handling incoming requests.
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
-const puppeteer = require('puppeteer')
+
+// const puppeteer = require('puppeteer')
+const rp = require('request-promise')
 const cheerio = require('cheerio')
 const url = 'https://sv.wikipedia.org/wiki/Portal:Huvudsida'
 fs = require('fs')
 
 https: module.exports = {
   itemFunction: async (req, res) => {
-    startParsing(url, 200)
+    startParsing(url, 20)
     return res.status(200).json('works')
   },
 }
 
 function startParsing(url, maxPages) {
-  let domain = url.substring(0, url.lastIndexOf('.org'))
+  let domain = url.substring(0, url.lastIndexOf('.org') + 4)
   let count = 1
   parseUrl(url, async function afterParse(path) {
     let linksPath = `${path}.links`
@@ -25,7 +27,6 @@ function startParsing(url, maxPages) {
     while (count < maxPages && linkArray.length > 0) {
       let link = linkArray[0]
       linkArray = linkArray.slice(1, linkArray.length)
-
       parseUrl(`${domain}${link}`, async function afterParse(path2) {
         linksPath2 = `${path2}.links`
         let linkArray2 = await readLinksFile(linksPath2)
@@ -60,7 +61,7 @@ async function readLinksFile(linksPath) {
 
 function parseUrl(url, callback) {
   let path = `files/${getFileNameFromUrl(url)}`
-  saveHTML(path, async function afterSaveHTML(htmlPath) {
+  saveHTML(url, path, async function afterSaveHTML(htmlPath) {
     const data = await readFile(htmlPath)
     let html = data.toString()
     await saveLinks(path, html)
@@ -120,18 +121,19 @@ function getFileNameFromUrl(url) {
   return url
 }
 
-function saveHTML(path, callback) {
+function saveHTML(url, path, callback) {
   let htmlPath = `${path}.html`
-  puppeteer
-    .launch()
-    .then(browser => {
-      return browser.newPage()
-    })
-    .then(page => {
-      return page.goto(url).then(() => {
-        return page.content()
-      })
-    })
+  // puppeteer
+  //   .launch()
+  //   .then(browser => {
+  //     return browser.newPage()
+  //   })
+  //   .then(page => {
+  //     return page.goto(url).then(() => {
+  //       return page.content()
+  //     })
+  //   })
+  rp(url)
     .then(async html => {
       await writeFile(htmlPath, html)
       callback(htmlPath)
