@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="sv" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Frida – Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","januari","februari","mars","april","maj","juni","juli","augusti","september","oktober","november","december"],"wgMonthNamesShort":["","jan","feb","mar","apr","maj","jun","jul","aug","sep","okt","nov","dec"],"wgRequestId":"XgnzOApAADwAAHZ1rHwAAABF","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Frida","wgTitle":"Frida","wgCurRevisionId":45173119,"wgRevisionId":45173119,"wgArticleId":89160,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Alla artiklar som behöver källor","Alla artiklar som behöver enstaka källor","Artiklar som behöver enstaka källor 2015-05","Kvinnonamn","Nordiska förnamn"],"wgPageContentLanguage":"sv","wgPageContentModel":"wikitext",
+"wgRelevantPageName":"Frida","wgRelevantArticleId":89160,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"sv","pageLanguageDir":"ltr","pageVariantFallbacks":"sv"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!0},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"svenska","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q848549","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.gadget.mainpage":"ready","ext.gadget.babel":"ready","ext.gadget.geo":"ready","ext.gadget.warnings":"ready","ext.gadget.tags":"ready","ext.gadget.error":"ready","ext.gadget.printonly":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","noscript":"ready",
+"user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","user.tokens":"loading","ext.cite.styles":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.toc.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.startup","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.editsection0","ext.gadget.EdittoolsAboveSummary","ext.gadget.Namespace-sensitiveEdittools","ext.gadget.Fullscreen","ext.gadget.Teckenstorlek","ext.gadget.ValValidering","ext.gadget.refcolumns","ext.gadget.labelfilter","ext.gadget.ReferenceTooltips","ext.gadget.ProtectionIndicators","ext.gadget.GeoboxLocatorMulti","ext.gadget.Noarticletext","ext.gadget.InterwikiBadges",
+"ext.gadget.collapsibleTables","ext.gadget.RecentChangesAdminNoms","ext.gadget.RecentChangesSFFR","ext.gadget.RecentChangesSnabbraderingar","ext.gadget.RecentChangesHelp","ext.gadget.RecentChangesProbCat","ext.gadget.RecentChangesAvblockering","ext.gadget.ExternalSearchEngines","ext.gadget.Wdsearch","ext.gadget.UppladdningarContentSub","ext.gadget.IP-whois","ext.gadget.GroupIndicators","ext.gadget.BlockIndicator","ext.gadget.NewSection","ext.gadget.KategoriTOC","ext.gadget.teahouse","ext.gadget.ExkluderaRobotskapadeSidor","ext.gadget.LocalHelpLinks","ext.gadget.InterProjectLinks","ext.gadget.cgiircbox","ext.gadget.withJS","ext.gadget.CommonsFileLinks","ext.gadget.tableSorterCollation","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns",
+"ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@d0ycn",function($,jQuery,require,module){/*@nomin*/mw.user.options.set({"variant":"sv"});
+});mw.loader.implement("user.tokens@tffin",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=sv&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface%7Cmediawiki.toc.styles%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=sv&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=sv&amp;modules=ext.gadget.babel%2Cerror%2Cgeo%2Cmainpage%2Cprintonly%2Ctags%2Cwarnings&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?lang=sv&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.35.0-wmf.11"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/d/da/Block_Kahlo_Rivera_1932_cropped.jpg"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/sv.m.wikipedia.org/wiki/Frida"/>
+<link rel="alternate" type="application/x-wiki" title="Redigera" href="/w/index.php?title=Frida&amp;action=edit"/>
+<link rel="edit" title="Redigera" href="/w/index.php?title=Frida&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (sv)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//sv.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://sv.wikipedia.org/wiki/Frida"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Frida rootpage-Frida skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="sv">Frida</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">Fr&aring;n Wikipedia</div>
+		<div id="contentSub"></div>
+		
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Hoppa till navigering</a>
+		<a class="mw-jump-link" href="#p-search">Hoppa till s&ouml;k</a>
+		<div id="mw-content-text" lang="sv" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/wiki/Fil:Block_Kahlo_Rivera_1932_cropped.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/da/Block_Kahlo_Rivera_1932_cropped.jpg/200px-Block_Kahlo_Rivera_1932_cropped.jpg" decoding="async" width="200" height="278" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/da/Block_Kahlo_Rivera_1932_cropped.jpg/300px-Block_Kahlo_Rivera_1932_cropped.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/d/da/Block_Kahlo_Rivera_1932_cropped.jpg 2x" data-file-width="385" data-file-height="536" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Fil:Block_Kahlo_Rivera_1932_cropped.jpg" class="internal" title="Förstora"></a></div><a href="/wiki/Frida_Kahlo" title="Frida Kahlo">Frida Kahlo</a></div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/wiki/Fil:Frida_Hallgren.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Frida_Hallgren.jpg/200px-Frida_Hallgren.jpg" decoding="async" width="200" height="277" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Frida_Hallgren.jpg/300px-Frida_Hallgren.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Frida_Hallgren.jpg/400px-Frida_Hallgren.jpg 2x" data-file-width="1522" data-file-height="2111" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Fil:Frida_Hallgren.jpg" class="internal" title="Förstora"></a></div><a href="/wiki/Frida_Hallgren" title="Frida Hallgren">Frida Hallgren</a></div></div></div>
+<div class="thumb tright"><div class="thumbinner" style="width:202px;"><a href="/wiki/Fil:Frida_Hansdotter_Altenmarkt-Zauchensee_2009.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Frida_Hansdotter_Altenmarkt-Zauchensee_2009.jpg/200px-Frida_Hansdotter_Altenmarkt-Zauchensee_2009.jpg" decoding="async" width="200" height="267" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Frida_Hansdotter_Altenmarkt-Zauchensee_2009.jpg/300px-Frida_Hansdotter_Altenmarkt-Zauchensee_2009.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Frida_Hansdotter_Altenmarkt-Zauchensee_2009.jpg/400px-Frida_Hansdotter_Altenmarkt-Zauchensee_2009.jpg 2x" data-file-width="2100" data-file-height="2800" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/Fil:Frida_Hansdotter_Altenmarkt-Zauchensee_2009.jpg" class="internal" title="Förstora"></a></div><a href="/wiki/Frida_Hansdotter" title="Frida Hansdotter">Frida Hansdotter</a></div></div></div>
+<p><b>Frida</b> är ett <a href="/wiki/Fornnordiska" title="Fornnordiska">fornnordiskt</a> <a href="/wiki/Kvinnonamn" class="mw-redirect" title="Kvinnonamn">kvinnonamn</a> bildat av ordet fridh som betyder den älskade, den vackra<sup id="cite_ref-1" class="reference"><a href="#cite_note-1"><span class="cite-reference-link-bracket">[</span>1<span class="cite-reference-link-bracket">]</span></a></sup>. Det är även en kortform av <a href="/wiki/Tyska" title="Tyska">tyska</a> namn som <a href="/wiki/Frideborg" title="Frideborg">Frideborg</a>, <a href="/wiki/Alfrida" title="Alfrida">Alfrida</a>, <a href="/wiki/Elfrida_(namn)" title="Elfrida (namn)">Elfrida</a> och Valfrida. Det äldsta belägget i Sverige är från år 1388.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2"><span class="cite-reference-link-bracket">[</span>2<span class="cite-reference-link-bracket">]</span></a></sup>  
+</p><p>Under 1980-talet och första halvan av 1990-talet upplevde namnet en modevåg. Som bäst låg Frida på tionde plats på topplistan (1993). Numera är tendensen något avtagande.<sup><a href="/wiki/Wikipedia:Introduktion_till_k%C3%A4llh%C3%A4nvisningar" title="Wikipedia:Introduktion till källhänvisningar">&#91;<span title="(2015-05)"><i>källa&#160;behövs</i></span>&#93;</a></sup>
+</p><p>Den 31 december 2014 fanns det totalt 30 049 kvinnor folkbokförda i Sverige med namnet Frida, varav 21 631 bar det som <a href="/wiki/Tilltalsnamn" title="Tilltalsnamn">tilltalsnamn</a>.<sup id="cite_ref-3" class="reference"><a href="#cite_note-3"><span class="cite-reference-link-bracket">[</span>3<span class="cite-reference-link-bracket">]</span></a></sup>
+</p><p><a href="/wiki/Namnsdag" title="Namnsdag">Namnsdag</a>: <a href="/wiki/18_februari" title="18 februari">18 februari</a>
+</p>
+<div id="toc" class="toc"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="sv" dir="ltr"><h2>Innehåll</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Personer_med_namnet_Frida"><span class="tocnumber">1</span> <span class="toctext">Personer med namnet Frida</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Personer_med_Frida_som_smeknamn"><span class="tocnumber">2</span> <span class="toctext">Personer med Frida som smeknamn</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Se_även"><span class="tocnumber">3</span> <span class="toctext">Se även</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Källor"><span class="tocnumber">4</span> <span class="toctext">Källor</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Personer_med_namnet_Frida">Personer med namnet Frida</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frida&amp;veaction=edit&amp;section=1" class="mw-editsection-visualeditor" title="Redigera avsnitt: Personer med namnet Frida">redigera</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Frida&amp;action=edit&amp;section=1" title="Redigera avsnitt: Personer med namnet Frida">redigera wikitext</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Frida_Aili" title="Frida Aili">Frida Aili</a>, svensk basketspelare</li>
+<li><a href="/wiki/Frida_Amundsen" title="Frida Amundsen">Frida Amundsen</a>, norsk sångerska</li>
+<li><a href="/wiki/Frida_Appelgren" title="Frida Appelgren">Frida Appelgren</a>, svensk sångerska</li>
+<li><a href="/wiki/Frida_Bergesen" title="Frida Bergesen">Frida Bergesen</a>, svensk skådespelare</li>
+<li><a href="/wiki/Frida_Boccara" title="Frida Boccara">Frida Boccara</a>, fransk sångerska</li>
+<li><a href="/wiki/Frida_Boisen" title="Frida Boisen">Frida Boisen</a>, svensk journalist</li>
+<li><a href="/wiki/Frida_Eldebrink" title="Frida Eldebrink">Frida Eldebrink</a>, svensk basketspelare</li>
+<li><a href="/wiki/Frida_Fahrman" title="Frida Fahrman">Frida Fahrman</a>, svensk moderedaktör</li>
+<li><a href="/wiki/Frida_Hallgren" title="Frida Hallgren">Frida Hallgren</a>, svensk skådespelare</li>
+<li><a href="/wiki/Frida_Hansdotter" title="Frida Hansdotter">Frida Hansdotter</a>, svensk alpin skidåkare</li>
+<li><a href="/wiki/Frida_Hyv%C3%B6nen" title="Frida Hyvönen">Frida Hyvönen</a>, svensk singer-songwriter</li>
+<li><a href="/wiki/Frida_Johansson" title="Frida Johansson">Frida Johansson</a>, svensk friidrottare</li>
+<li><a href="/wiki/Frida_Johansson_Metso" title="Frida Johansson Metso">Frida Johansson Metso</a>, svensk politiker (fp)</li>
+<li><a href="/wiki/Frida_Kahlo" title="Frida Kahlo">Frida Kahlo</a>, mexikansk konstnär</li>
+<li><a href="/wiki/Frida_Karlsson" title="Frida Karlsson">Frida Karlsson</a>, svensk längdskidåkare</li>
+<li><a href="/wiki/Frida_Linde" title="Frida Linde">Frida Linde</a>, svensk friidrottare</li>
+<li><a href="/wiki/Frida_Mod%C3%A9n_Treichl" title="Frida Modén Treichl">Frida Modén Treichl</a>, svensk-österrikisk musikalartist</li>
+<li><a href="/wiki/Frida_Nevalainen" title="Frida Nevalainen">Frida Nevalainen</a>, svensk ishockeyspelare</li>
+<li><a href="/wiki/Frida_Nordstrand" title="Frida Nordstrand">Frida Nordstrand</a>, svensk sportjournalist</li>
+<li><a href="/wiki/Frida_Nilsson" title="Frida Nilsson">Frida Nilsson</a>, svensk författare</li>
+<li><a href="/wiki/Frida_Nordin" title="Frida Nordin">Frida Nordin</a>, svensk fotbollsspelare</li>
+<li><a href="/wiki/Frida_Normark" title="Frida Normark">Frida Normark</a>, svensk programledare</li>
+<li><a href="/wiki/Frida_Persson" title="Frida Persson">Frida Persson</a>, svensk friidrottare</li>
+<li><a href="/wiki/Frida_R%C3%B6hl" title="Frida Röhl">Frida Röhl</a>, svensk skådespelare och regissör</li>
+<li><a href="/wiki/Frida_Sand%C3%A9n" title="Frida Sandén">Frida Sandén</a>, svensk sångerska</li>
+<li><a href="/wiki/Frida_Segerdahl-Nordstr%C3%B6m" title="Frida Segerdahl-Nordström">Frida Segerdahl-Nordström</a>, svensk konståkare</li>
+<li><a href="/wiki/Frida_Sporrong" title="Frida Sporrong">Frida Sporrong</a>, svensk skådespelare</li>
+<li><a href="/wiki/Frida_St%C3%A9enhoff" title="Frida Stéenhoff">Frida Stéenhoff</a>, svensk författare</li>
+<li><a href="/wiki/Frida_Svensson_(roddare)" title="Frida Svensson (roddare)">Frida Svensson</a>, svensk roddare</li>
+<li><a href="/wiki/Frida_Uhl" title="Frida Uhl">Frida Uhl</a>, österrikisk författare (gift med <a href="/wiki/August_Strindberg" title="August Strindberg">August Strindberg</a>)</li>
+<li><a href="/wiki/Frida_Wallberg" title="Frida Wallberg">Frida Wallberg</a>, svensk proffsboxare</li>
+<li><a href="/wiki/Frida_Westerdahl" title="Frida Westerdahl">Frida Westerdahl</a>, svensk skådespelare</li>
+<li><a href="/wiki/Frida_Zetterstr%C3%B6m" title="Frida Zetterström">Frida Zetterström</a>, svensk journalist</li>
+<li><a href="/wiki/Frida_%C3%96hrn" title="Frida Öhrn">Frida Öhrn</a>, svensk sångerska i <a href="/wiki/Oh_Laura" title="Oh Laura">Oh Laura</a> och <a href="/wiki/Cookies_%27N%27_Beans" title="Cookies &#39;N&#39; Beans">Cookies 'N' Beans</a></li>
+<li><a href="/wiki/Frida_%C3%96stberg" title="Frida Östberg">Frida Östberg</a>, svensk fotbollsspelare</li></ul>
+<h2><span class="mw-headline" id="Personer_med_Frida_som_smeknamn">Personer med Frida som smeknamn</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frida&amp;veaction=edit&amp;section=2" class="mw-editsection-visualeditor" title="Redigera avsnitt: Personer med Frida som smeknamn">redigera</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Frida&amp;action=edit&amp;section=2" title="Redigera avsnitt: Personer med Frida som smeknamn">redigera wikitext</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Anni-Frid_Lyngstad" title="Anni-Frid Lyngstad">Anni-Frid Lyngstad</a>, musiker, brukar kallas Frida och har också använt detta som <a href="/wiki/Artistnamn" title="Artistnamn">artistnamn</a></li>
+<li><a href="/wiki/Frida_Winnerstrand" title="Frida Winnerstrand">Frida Winnerstrand</a>, skådespelare, var egentligen döpt till <a href="/wiki/Alfrida" title="Alfrida">Alfrida</a>.</li></ul>
+<h2><span id="Se_.C3.A4ven"></span><span class="mw-headline" id="Se_även">Se även</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frida&amp;veaction=edit&amp;section=3" class="mw-editsection-visualeditor" title="Redigera avsnitt: Se även">redigera</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Frida&amp;action=edit&amp;section=3" title="Redigera avsnitt: Se även">redigera wikitext</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/Frida_(film)" title="Frida (film)">Frida (film)</a>, film om <a href="/wiki/Frida_Kahlo" title="Frida Kahlo">Frida Kahlo</a> från 2002</li>
+<li><a href="/wiki/Frida,_en_trotj%C3%A4narinna" title="Frida, en trotjänarinna">Frida, en trotjänarinna</a>, svensk dokumentärfilm från 1999</li>
+<li><a href="/wiki/Frida_(tidning)" title="Frida (tidning)">Frida (tidning)</a></li>
+<li><a href="/wiki/Frida_(%C3%A4pple)" title="Frida (äpple)">Frida (äpple)</a></li>
+<li><a href="/wiki/Fridas_bok" title="Fridas bok">Fridas bok</a>, vissamling av <a href="/wiki/Birger_Sj%C3%B6berg" title="Birger Sjöberg">Birger Sjöberg</a></li></ul>
+<p><br />
+</p>
+<h2><span id="K.C3.A4llor"></span><span class="mw-headline" id="Källor">Källor</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Frida&amp;veaction=edit&amp;section=4" class="mw-editsection-visualeditor" title="Redigera avsnitt: Källor">redigera</a><span class="mw-editsection-divider"> | </span><a href="/w/index.php?title=Frida&amp;action=edit&amp;section=4" title="Redigera avsnitt: Källor">redigera wikitext</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ol class="references">
+<li id="cite_note-1"><a href="#cite_ref-1">^</a> <span class="reference-text"><cite style="font-style:normal" class="web"><a rel="nofollow" class="external text" href="https://svenskanamn.alltforforaldrar.se/visa/Frida">”Frida betydelse  - Svenska namn”</a>.&#32;<i><span>svenskanamn.alltforforaldrar.se</span></i><span class="printonly">. <a rel="nofollow" class="external free" href="https://svenskanamn.alltforforaldrar.se/visa/Frida">https://svenskanamn.alltforforaldrar.se/visa/Frida</a></span><span class="reference-accessdate">.&#32;Läst 20 augusti 2018</span>.</cite><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Frida+betydelse++-+Svenska+namn&amp;rft.atitle=svenskanamn.alltforforaldrar.se&amp;rft_id=https%3A%2F%2Fsvenskanamn.alltforforaldrar.se%2Fvisa%2FFrida&amp;rfr_id=info:sid/en.wikipedia.org:Frida"><span style="display: none;">&#160;</span></span></span>
+</li>
+<li id="cite_note-2"><a href="#cite_ref-2">^</a> <span class="reference-text">Nomina, Historiska museet</span>
+</li>
+<li id="cite_note-3"><a href="#cite_ref-3">^</a> <span class="reference-text"> Enligt sökning i <a href="/wiki/Statistiska_centralbyr%C3%A5n" title="Statistiska centralbyrån">Statistiska centralbyråns</a> <a rel="nofollow" class="external text" href="http://www.scb.se/sv_/Hitta-statistik/Statistik-efter-amne/Befolkning/Amnesovergripande-statistik/Namnstatistik/30903/Namnsok/">Namndatabas</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20151005190258/http://www.scb.se/sv_/Hitta-statistik/Statistik-efter-amne/Befolkning/Amnesovergripande-statistik/Namnstatistik/30903/Namnsok/">Arkiverad</a> 5 oktober 2015 hämtat från the <a href="/wiki/Internet_Archive#Wayback_Machine" title="Internet Archive">Wayback Machine</a>.</span>
+</li>
+</ol>
+<!-- 
+NewPP limit report
+Parsed by mw1308
+Cached time: 20191229210810
+Cache expiry: 2592000
+Dynamic content: false
+Complications: []
+CPU time usage: 0.092 seconds
+Real time usage: 0.133 seconds
+Preprocessor visited node count: 746/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 4987/2097152 bytes
+Template argument size: 1410/2097152 bytes
+Highest expansion depth: 16/40
+Expensive parser function count: 0/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 2445/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.005/10.000 seconds
+Lua memory usage: 730 KB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   79.340      1 -total
+ 85.43%   67.781      1 Mall:Webbref
+ 75.44%   59.855      1 Mall:Cite_web
+ 67.33%   53.416      1 Mall:Citation/core
+ 28.57%   22.670      2 Mall:Date
+  8.70%    6.906      1 Mall:Link
+  7.08%    5.621      1 Mall:Wayback
+  5.34%    4.233      1 Mall:Källa_behövs
+  3.65%    2.899      1 Mall:Italiclink
+  3.37%    2.677      4 Mall:Void
+-->
+
+<!-- Saved in parser cache with key svwiki:pcache:idhash:89160-0!canonical and timestamp 20191229210810 and revision id 45173119
+ -->
+</div><noscript><img src="//sv.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		
+		<div class="printfooter">Hämtad från "<a dir="ltr" href="https://sv.wikipedia.org/w/index.php?title=Frida&amp;oldid=45173119">https://sv.wikipedia.org/w/index.php?title=Frida&amp;oldid=45173119</a>"</div>
+		
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Wikipedia:Kategorier" title="Wikipedia:Kategorier">Kategorier</a>: <ul><li><a href="/wiki/Kategori:Kvinnonamn" title="Kategori:Kvinnonamn">Kvinnonamn</a></li><li><a href="/wiki/Kategori:Nordiska_f%C3%B6rnamn" title="Kategori:Nordiska förnamn">Nordiska förnamn</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Dolda kategorier: <ul><li><a href="/wiki/Kategori:Alla_artiklar_som_beh%C3%B6ver_k%C3%A4llor" title="Kategori:Alla artiklar som behöver källor">Alla artiklar som behöver källor</a></li><li><a href="/wiki/Kategori:Alla_artiklar_som_beh%C3%B6ver_enstaka_k%C3%A4llor" title="Kategori:Alla artiklar som behöver enstaka källor">Alla artiklar som behöver enstaka källor</a></li><li><a href="/wiki/Kategori:Artiklar_som_beh%C3%B6ver_enstaka_k%C3%A4llor_2015-05" title="Kategori:Artiklar som behöver enstaka källor 2015-05">Artiklar som behöver enstaka källor 2015-05</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+
+		<div id="mw-navigation">
+			<h2>Navigeringsmeny</h2>
+			<div id="mw-head">
+						<div id="p-personal" role="navigation" aria-labelledby="p-personal-label">
+			<h3 id="p-personal-label">Personliga verktyg</h3>
+			<ul>
+				<li id="pt-anonuserpage">Inte inloggad</li><li id="pt-anontalk"><a href="/wiki/Special:Min_diskussion" title="Diskussion om redigeringar från det här IP-numret [n]" accesskey="n">Diskussion</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:Mina_bidrag" title="En lista över redigeringar från denna IP-adress [y]" accesskey="y">Bidrag</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:Skapa_konto&amp;returnto=Frida" title="Du uppmuntras att skapa ett konto och logga in, men det är inte obligatoriskt">Skapa konto</a></li><li id="pt-login"><a href="/w/index.php?title=Special:Inloggning&amp;returnto=Frida" title="Inloggning ger tillgång till fler funktioner för den som vill skriva och redigera artiklar. [o]" accesskey="o">Logga in</a></li>			</ul>
+		</div>
+						<div id="left-navigation">
+					
+<div id="p-namespaces" role="navigation" class="vectorTabs " aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namnrymder</h3>
+	<ul >
+		<li id="ca-nstab-main" class="selected"><a href="/wiki/Frida" title="Visa innehållssidan [c]" accesskey="c">Artikel</a></li><li id="ca-talk" class="new"><a href="/w/index.php?title=Diskussion:Frida&amp;action=edit&amp;redlink=1" rel="discussion" title="Diskussion om innehållssidan [inte skriven än] [t]" accesskey="t">Diskussion</a></li>
+	</ul>
+</div>
+		<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+						<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+			<h3 id="p-variants-label">
+				<span>Varianter</span>
+			</h3>
+			<ul class="menu">
+							</ul>
+		</div>
+						</div>
+				<div id="right-navigation">
+					
+<div id="p-views" role="navigation" class="vectorTabs " aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Visningar</h3>
+	<ul >
+		<li id="ca-view" class="collapsible selected"><a href="/wiki/Frida">Läs</a></li><li id="ca-ve-edit" class="collapsible"><a href="/w/index.php?title=Frida&amp;veaction=edit" title="Redigera denna sida [v]" accesskey="v">Redigera</a></li><li id="ca-edit" class="collapsible"><a href="/w/index.php?title=Frida&amp;action=edit" title="Redigera den här sidan. [e]" accesskey="e">Redigera wikitext</a></li><li id="ca-history" class="collapsible"><a href="/w/index.php?title=Frida&amp;action=history" title="Tidigare versioner av sidan [h]" accesskey="h">Visa historik</a></li>
+	</ul>
+</div>
+		<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+			<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+			<h3 id="p-cactions-label"><span>Mer</span></h3>
+			<ul class="menu">
+							</ul>
+		</div>
+		
+<div id="p-search" role="search">
+	<h3 >
+		<label for="searchInput">S&ouml;k</label>
+	</h3>
+	<form action="/w/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Sök på Wikipedia" title="Sök i svenskspråkiga Wikipedia [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" value="Special:Sök" name="title"/>
+			
+			<input type="submit" name="fulltext" value="Sök" title="Sök efter sidor som innehåller denna text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Gå till" title="Gå till sidan med exakt detta namn om den finns" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+				</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Portal:Huvudsida" title="Besök huvudsidan"></a></div>
+						<div class="portal" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+			<h3 id="p-navigation-label">Navigering</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Portal:Huvudsida" title="Besök huvudsidan [z]" accesskey="z">Huvudsida</a></li><li id="n-Introduktion"><a href="/wiki/Wikipedia:Introduktion">Introduktion</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Deltagarportalen" title="Om projektet, vad du kan göra, var man kan hitta saker">Deltagarportalen</a></li><li id="n-Bybrunnen"><a href="/wiki/Wikipedia:Bybrunnen">Bybrunnen</a></li><li id="n-recentchanges"><a href="/wiki/Special:Senaste_%C3%A4ndringar" title="Lista över senaste ändringar i wikin [r]" accesskey="r">Senaste ändringarna</a></li><li id="n-randompage"><a href="/wiki/Special:Slumpsida" title="Gå till en slumpmässigt vald sida [x]" accesskey="x">Slumpartikel</a></li><li id="n-filuppladdning"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard" title="Ladda upp filer till Wikimedia Commons">Ladda upp filer</a></li><li id="n-sitesupport"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_sv.wikipedia.org&amp;uselang=sv" title="Stöd oss">Stöd Wikipedia</a></li><li id="n-Kontakta-Wikipedia"><a href="/wiki/Wikipedia:Kontakt">Kontakta Wikipedia</a></li><li id="n-help"><a href="/wiki/Wikipedia:Hj%C3%A4lp" title="Platsen där du hittar hjälp">Hjälp</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-wikibase-otherprojects" aria-labelledby="p-wikibase-otherprojects-label">
+			<h3 id="p-wikibase-otherprojects-label">På andra projekt</h3>
+			<div class="body">
+								<ul>
+					<li class="wb-otherproject-link wb-otherproject-commons"><a href="https://commons.wikimedia.org/wiki/Category:Frida_(given_name)" hreflang="en">Commons</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-coll-print_export" aria-labelledby="p-coll-print_export-label">
+			<h3 id="p-coll-print_export-label">Skriv ut/exportera</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Bok&amp;bookcmd=book_creator&amp;referer=Frida">Skapa en bok</a></li><li id="coll-download-as-rl"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Frida&amp;action=show-download-screen">Ladda ner som PDF</a></li><li id="t-print"><a href="/w/index.php?title=Frida&amp;printable=yes" title="Utskriftsvänlig version av den här sidan [p]" accesskey="p">Utskriftsvänlig version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-tb" aria-labelledby="p-tb-label">
+			<h3 id="p-tb-label">Verktyg</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:L%C3%A4nkar_hit/Frida" title="Lista över alla wikisidor som länkar hit [j]" accesskey="j">Sidor som länkar hit</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:Senaste_relaterade_%C3%A4ndringar/Frida" rel="nofollow" title="Visa senaste ändringarna av sidor som den här sidan länkar till [k]" accesskey="k">Relaterade ändringar</a></li><li id="t-specialpages"><a href="/wiki/Special:Specialsidor" title="Lista över alla specialsidor [q]" accesskey="q">Specialsidor</a></li><li id="t-permalink"><a href="/w/index.php?title=Frida&amp;oldid=45173119" title="Permanent länk till den här versionen av sidan">Permanent länk</a></li><li id="t-info"><a href="/w/index.php?title=Frida&amp;action=info" title="Mer information om denna sida">Sidinformation</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q848549" title="Länk till anslutet databasobjekt [g]" accesskey="g">Wikidataobjekt</a></li><li id="t-cite"><a href="/w/index.php?title=Special:Citera&amp;page=Frida&amp;id=45173119" title="Information om hur den här artikeln kan användas som referens">Använd denna sida som referens</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id="p-lang" aria-labelledby="p-lang-label">
+			<h3 id="p-lang-label">Språk</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Frida" title="Frida – tjeckiska" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Frida" title="Frida – danska" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Frida" title="Frida – tyska" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/Frida" title="Frida – estniska" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-en"><a href="https://en.wikipedia.org/wiki/Frida_(given_name)" title="Frida (given name) – engelska" lang="en" hreflang="en" class="interlanguage-link-target">English</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Frida_(desambiguaci%C3%B3n)" title="Frida (desambiguación) – spanska" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fo"><a href="https://fo.wikipedia.org/wiki/Frida" title="Frida – färöiska" lang="fo" hreflang="fo" class="interlanguage-link-target">Føroyskt</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Frida_(nome)" title="Frida (nome) – italienska" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Frida" title="Frida – ungerska" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Frida" title="Frida – nederländska" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Frida" title="Frida – norskt bokmål" lang="nb" hreflang="nb" class="interlanguage-link-target">Norsk bokmål</a></li><li class="interlanguage-link interwiki-nn"><a href="https://nn.wikipedia.org/wiki/Frida" title="Frida – nynorska" lang="nn" hreflang="nn" class="interlanguage-link-target">Norsk nynorsk</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A4%D1%80%D0%B8%D0%B4%D0%B0" title="Фрида – ryska" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sl"><a href="https://sl.wikipedia.org/wiki/Frida" title="Frida – slovenska" lang="sl" hreflang="sl" class="interlanguage-link-target">Slovenščina</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/Frida" title="Frida – finska" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q848549#sitelinks-wikipedia" title="Redigera interwikilänkar" class="wbc-editpage">Redigera länkar</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> Sidan redigerades senast den 28 februari 2019 kl. 22.42.</li>
+								<li id="footer-info-copyright">Wikipedias text är tillgänglig under licensen  <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.sv">Creative Commons Erkännande-dela-lika 3.0 Unported</a>. För bilder, se respektive bildsida (klicka på bilden). Se vidare <a href="//sv.wikipedia.org/wiki/Wikipedia:Upphovsrätt">Wikipedia:Upphovsrätt</a> och <a href="//wikimediafoundation.org/wiki/Terms_of_Use">användarvillkor</a>.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Wikimedias integritetspolicy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:Om" title="Wikipedia:Om">Om Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:Allm%C3%A4nt_f%C3%B6rbeh%C3%A5ll" title="Wikipedia:Allmänt förbehåll">Förbehåll</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Utvecklare</a></li>
+								<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/v2/#/sv.wikipedia.org">Statistik</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Information om kakor</a></li>
+								<li id="footer-places-mobileview"><a href="//sv.m.wikipedia.org/w/index.php?title=Frida&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobil vy</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="https://www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.092","walltime":"0.133","ppvisitednodes":{"value":746,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":4987,"limit":2097152},"templateargumentsize":{"value":1410,"limit":2097152},"expansiondepth":{"value":16,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":2445,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%   79.340      1 -total"," 85.43%   67.781      1 Mall:Webbref"," 75.44%   59.855      1 Mall:Cite_web"," 67.33%   53.416      1 Mall:Citation/core"," 28.57%   22.670      2 Mall:Date","  8.70%    6.906      1 Mall:Link","  7.08%    5.621      1 Mall:Wayback","  5.34%    4.233      1 Mall:Källa_behövs","  3.65%    2.899      1 Mall:Italiclink","  3.37%    2.677      4 Mall:Void"]},"scribunto":{"limitreport-timeusage":{"value":"0.005","limit":"10.000"},"limitreport-memusage":{"value":747697,"limit":52428800}},"cachereport":{"origin":"mw1308","timestamp":"20191229210810","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Frida","url":"https:\/\/sv.wikipedia.org\/wiki\/Frida","sameAs":"http:\/\/www.wikidata.org\/entity\/Q848549","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q848549","author":{"@type":"Organization","name":"Bidragsgivare till Wikimedia-projekten"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-11-18T21:08:36Z","dateModified":"2019-02-28T21:42:27Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/d\/da\/Block_Kahlo_Rivera_1932_cropped.jpg","headline":"kvinnonamn"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":121,"wgHostname":"mw1265"});});</script>
+</body>
+</html>
