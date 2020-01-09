@@ -5,7 +5,6 @@
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
 
-// const puppeteer = require('puppeteer')
 const rp = require('request-promise')
 const cheerio = require('cheerio')
 const url = 'https://sv.wikipedia.org/wiki/Portal:Huvudsida'
@@ -243,7 +242,6 @@ function startParsing(url, maxPages) {
       let link = linkSet.values()
       link = link.next()
       link = link.value
-      linkSet.delete(link)
       parseUrl(`${domain}${link}`, async function afterParse(path2) {
         linksPath2 = `${path2}.links`
         let linkArray2 = await readLinksFile(linksPath2)
@@ -256,6 +254,7 @@ function startParsing(url, maxPages) {
           }
         })
       })
+      linkSet.delete(link)
       console.log(count)
       count++
     }
@@ -301,9 +300,9 @@ async function saveWords(path, html) {
       .text()
       .trim() // removes whitespaces in front and at end of text
       .replace(/ *\[[^)]*\] */g, '') // removes '[]' and content
-      .replace(/[\])}[{(]/g, '')
-      .replace(/[,.-]/g, '')
-      .replace(/['"|]+/g, '')
+      .replace(/[\])}[{(]/g, '') // removes parentesises
+      .replace(/[,.-]/g, '') // removes dash, dot, comma
+      .replace(/['"|]+/g, '') // removes qoute and apostroph
       .replace(/\s/g, ' ') // removes extra whitespaces within text
       .toLowerCase()
     if (text) {
@@ -327,12 +326,14 @@ async function saveLinks(path, html) {
       if (link.length > 7) {
         // avoid unfinished or 'fake' links e.g. '#'
         if (
+          // sort out unwanted types of links
           link.includes('#') ||
           link.includes('.jpg') ||
           link.includes('.png')
         ) {
           // do nothing
         } else if (link.substring(0, 5) === '/wiki') {
+          //if the links that remain include /wiki, grab it.
           links.push(link)
         }
       }
@@ -342,7 +343,6 @@ async function saveLinks(path, html) {
 }
 
 function getFileNameFromUrl(url) {
-  // url = url.replace(/^(?:https?:\/\/)?(?:www\.)?/i, '').split('/')[0]
   url = url.substring(url.lastIndexOf('/') + 1, url.length)
   url = url.replace(':', '_')
   return url
@@ -350,16 +350,6 @@ function getFileNameFromUrl(url) {
 
 async function saveHTML(url, path, callback) {
   let htmlPath = `${path}.html`
-  // puppeteer
-  //   .launch()
-  //   .then(browser => {
-  //     return browser.newPage()
-  //   })
-  //   .then(page => {
-  //     return page.goto(url).then(() => {
-  //       return page.content()
-  //     })
-  //   })
   try {
     let data = await readFile(htmlPath)
     if (data) {
